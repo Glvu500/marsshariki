@@ -3,92 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MARS Шарики – Заказ шаров</title>
+  <title>Марс Шарики</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>MARS Шарики</h1>
-    <nav>
-      <a href="#catalog">Каталог</a>
-      <a href="#order">Заказать</a>
-      <a href="#contact">Контакты</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Дизайнерские композиции из воздушных шаров</h2>
-    <p>Создаём нежные и стильные декорации для праздников, фотосессий и особенных событий.</p>
-    <a href="#catalog" class="btn">Смотреть каталог</a>
-  </section>
-
-  <section class="catalog" id="catalog">
-    <h3>Наши композиции</h3>
-    <div class="items">
-      <div class="item">
-        <img src="images/balloons1.jpg" alt="Композиция 1">
-        <h4>Розовый закат</h4>
-        <p>Нежная композиция в пастельных тонах для романтических событий.</p>
-        <div class="price">3 500 ₽</div>
-      </div>
-      <div class="item">
-        <img src="images/balloons2.jpg" alt="Композиция 2">
-        <h4>Небесная мечта</h4>
-        <p>Воздушная арка в голубых оттенках для детских праздников.</p>
-        <div class="price">4 200 ₽</div>
-      </div>
-      <div class="item">
-        <img src="images/balloons3.jpg" alt="Композиция 3">
-        <h4>Яркий акцент</h4>
-        <p>Композиция с яркими деталями для вечеринок и фотозон.</p>
-        <div class="price">5 000 ₽</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="order" id="order">
-    <h3>Сделать заказ</h3>
-    <form id="orderForm">
-      <label for="name">Ваше имя</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="phone">Телефон</label>
-      <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
-
-      <label for="composition">Выберите композицию</label>
-      <select id="composition" name="composition" required>
-        <option value="">-- Выберите --</option>
-        <option value="Розовый закат">Розовый закат – 3 500 ₽</option>
-        <option value="Небесная мечта">Небесная мечта – 4 200 ₽</option>
-        <option value="Яркий акцент">Яркий акцент – 5 000 ₽</option>
-      </select>
-
-      <label for="message">Комментарий</label>
-      <textarea id="message" name="message" placeholder="Укажите дату, адрес доставки или пожелания"></textarea>
-
-      <button type="submit">Отправить заказ</button>
-    </form>
-    <p id="status"></p>
-  </section>
-
-  <section class="contact" id="contact">
-    <h3>Связаться с нами</h3>
-    <p>Телефон: +7 (999) 123-45-67</p>
-    <p>Instagram: @mars_shariki</p>
-    <p>Email: hello@marsshariki.ru</p>
-  </section>
-
-  <footer>
-    © 2024 MARS Шарики. Все права защищены.
-  </footer>
-
-  <script>
-    // Заглушка: пока форма просто выводит сообщение
-    document.getElementById("orderForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      document.getElementById("status").innerText = "✅ Заказ отправлен!";
-      document.getElementById("orderForm").reset();
-    });
-  </script>
+  <h1>Привет! Это мой сайт 🚀</h1>
+  <canvas id="canvas"></canvas>
+  <script src="script.js"></script>
 </body>
 </html>
